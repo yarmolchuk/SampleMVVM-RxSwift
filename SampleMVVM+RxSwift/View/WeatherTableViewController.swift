@@ -73,11 +73,11 @@ class WeatherTableViewController: UITableViewController, UIAlertViewDelegate {
         bindSourceToLabel(viewModel.degrees, label: cityDegreesLabel)
         bindSourceToLabel(viewModel.weatherDescription, label: weatherMessageLabel)
         
-//        viewModel.weatherImage.subscribeNext { image in
-//            self.weatherImageOutlet.image = image
-//            }
-//            .addDisposableTo(disposeBag)
-//        
+        viewModel.weatherImage.subscribeNext { image in
+            self.weatherImageOutlet.image = image
+            }
+            .addDisposableTo(disposeBag)
+//
 //        viewModel.tableViewData.subscribeNext { data in
 //            self.tableViewData = data
 //            self.tableView.reloadData()
@@ -91,12 +91,12 @@ class WeatherTableViewController: UITableViewController, UIAlertViewDelegate {
 //            }
 //            .addDisposableTo(disposeBag)
 //        
-//        viewModel.errorAlertController.subscribeNext { alertController in
-//            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-//                self.alertController = alertController
-//            })
-//            }
-//            .addDisposableTo(disposeBag)
+        viewModel.errorAlertController.subscribeNext { alertController in
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                self.alertController = alertController
+            })
+            }
+            .addDisposableTo(disposeBag)
         
     }
 
