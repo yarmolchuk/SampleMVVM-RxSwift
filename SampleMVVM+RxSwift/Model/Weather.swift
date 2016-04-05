@@ -2,8 +2,8 @@
 //  Weather.swift
 //  SampleMVVM+RxSwift
 //
-//  Created by Dima on 30.03.16.
-//  Copyright © 2016 Dima. All rights reserved.
+//  Created by Dima Yarmolchuk on 30.03.16.
+//  Copyright © 2016 Dima Yarmolchuk. All rights reserved.
 //
 
 import Foundation
